@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: build step
+        uses: kl13nt/courseware-as-code-action@v0.0.9
+        with:
+          debug: true
