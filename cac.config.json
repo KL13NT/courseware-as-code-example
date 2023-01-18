@@ -1,1 +1,8 @@
-{}
+{
+	"courseName": "My amazing course",
+	"campusName": "Sample Campus",
+	"courseDescription": "A sample course about computer science!",
+	"campusWebsite": "https://example.com",
+	"courseCode": "CS-101",
+	"theme": "https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+}

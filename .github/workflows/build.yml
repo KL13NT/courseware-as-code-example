@@ -8,4 +8,4 @@ jobs:
       - name: build step
         uses: kl13nt/courseware-as-code-action@v0.0.9
         with:
-          debug: true
+          debug: true # prints npm and next logs in case of successful build
