@@ -1,5 +1,6 @@
 on: [push]
-
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +13,5 @@ jobs:
           debug: true # prints npm and next logs in case of successful build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
-        permissions:
-          contents: write
         with:
           folder: courseware-as-code-template-master/out # The folder the action should deploy.
