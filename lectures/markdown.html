@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Blog</title><meta content="Blog" property="og:title"/><meta content="website" property="og:type"/><meta content="A sample course about computer science!" name="description"/><meta content="A sample course about computer science!" property="og:description"/><meta content="https://example.com" property="og:URL"/><meta content="My amazing course" property="og:site_name"/><meta content="image/jpeg" property="og:image:type"/><meta content="summary_large_image" name="twitter:card"/><meta content="Blog" property="twitter:title"/><meta content="A sample course about computer science!" property="twitter:description"/><meta content="Sample Campus" property="twitter:creator"/><meta content="Sample Campus" property="twitter:site"/><meta name="next-head-count" content="15"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"/><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/shades-of-purple.min.css"/><link rel="preload" href="/_next/static/css/af3a5591ab2bf196.css" as="style"/><link rel="stylesheet" href="/_next/static/css/af3a5591ab2bf196.css" data-n-g=""/><noscript data-n-css=""></noscript></head><body><div id="__next"><div class="container"><div class="header"><a href="/">/home</a><h1>Using Markdown</h1><p>Created: <!-- -->Thursday, 19 January 2023 at 9:10 pm</p><p>Updated: <!-- -->Thursday, 19 January 2023 at 9:10 pm</p><p>A sample file to show how to use markdown in CaC.</p></div><hr/><div><h1>Markdown</h1>
+<p>Markdown is a lightweight markup language that you can use to add formatting
+elements to plaintext text documents. This article lays out some examples of how it works
+and how is can be used in CaC, you can also read more about it in <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown
+Cheatsheet</a>.</p>
+<p>You can use the [Markdown All in One] and [Markdown Shortcuts] VSCode extensions
+to easily format markdown files, add and automatically update table of contents
+and tables, etc. This combination makes markdown editing really fun!</p>
+<p>This document requires you view the source to understand how it works.</p>
+<h2>Headers</h2>
+<pre><code class="hljs language-markdown"><span class="hljs-section"># This is an h1 tag (biggest)</span>
+
+<span class="hljs-section">## This is an h2 tag</span>
+
+<span class="hljs-section">### This is an h3 tag</span>
+
+<span class="hljs-section">#### This is an h4 tag</span>
+
+<span class="hljs-section">##### This is an h5 tag</span>
+
+<span class="hljs-section">###### This is an h6 tag (smallest)</span>
+
+For underline style:
+
+<span class="hljs-section"># Alt-H1</span>
+
+<span class="hljs-section">## Alt-H2</span>
+</code></pre>
+<p>Don't skip header levels, for example, don't go from an h1 to an h3. Skipping
+ruins the accessibility and SEO of the output pages.</p>
+<h2>Paragraphs</h2>
+<pre><code class="hljs language-markdown">Paragraphs shouldn't have tabs or spaces in the beginning. By default new lines
+in the output are created by leaving an empty line between two paragraphs or
+elements in general.
+
+This is another paragraph after the first. You can have it in any formatting you like! Markdown is really fun!
+</code></pre>
+<p>Paragraphs shouldn't have tabs or spaces in the beginning. By default new lines
+in the output are created by leaving an empty line between two paragraphs or
+elements in general.</p>
+<p>This is another paragraph after the first. You can have it in any formatting you like! Markdown is really fun!</p>
+<h2>Emphasis</h2>
+<pre><code class="hljs language-markdown"><span class="hljs-emphasis">_This text will be italic (This is the best practice)_</span>
+<span class="hljs-strong">**This text will be bold (This is the best practice)**</span>
+<span class="hljs-emphasis">_You <span class="hljs-strong">**can**</span> combine them_</span>
+</code></pre>
+<p><em>This text will be italic (This is the best practice)</em></p>
+<p><strong>This text will be bold (This is the best practice)</strong></p>
+<p><em>You <strong>can</strong> combine them</em></p>
+<h2>Lists</h2>
+<h3>Unordered</h3>
+<pre><code class="hljs language-markdown"><span class="hljs-bullet">-</span> Item 1
+<span class="hljs-bullet">-</span> Item 2
+<span class="hljs-bullet">  -</span> Item 2a
+<span class="hljs-bullet">  -</span> Item 2b
+</code></pre>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Item 2a</li>
+<li>Item 2b</li>
+</ul>
+</li>
+</ul>
+<h3>Ordered</h3>
+<pre><code class="hljs language-markdown"><span class="hljs-bullet">1.</span> Item 1
+<span class="hljs-bullet">2.</span> Item 2
+<span class="hljs-bullet">3.</span> Item 3
+<span class="hljs-bullet">   1.</span> Item 3a
+<span class="hljs-bullet">   2.</span> Item 3b
+</code></pre>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol>
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol>
+</li>
+</ol>
+<h2>Blockquotes</h2>
+<p>As Abraham Lincoln once said:</p>
+<pre><code class="hljs language-markdown"><span class="hljs-quote">> The problem with quotes found on the internet is they often are not true.</span>
+</code></pre>
+<blockquote>
+<p>The problem with quotes found on the internet is they often are not true.</p>
+</blockquote>
+<h2>Code</h2>
+<h3>Inline</h3>
+<pre><code class="hljs language-markdown"><span class="hljs-code">`f(x) = x^2`</span> and <span class="hljs-code">`f(x) = x^2`</span> are valid inline code.
+</code></pre>
+<p><code>f(x) = x^2</code> and <code>f(x) = x^2</code> are valid inline code.</p>
+<h3>Block</h3>
+<p>I recommend keeping in code in fences <code>```</code> (called Blocks). This gives you syntax
+highlighting and are easier to type.</p>
+<pre><code class="hljs language-markdown"><span class="hljs-code">```java
+public static void main(String[] args) {
+    System.out.println("Never gonna give you up");
+}
+```</span>
+</code></pre>
+<pre><code class="hljs language-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    System.out.println(<span class="hljs-string">"Never gonna give you up"</span>);
+}
+</code></pre>
+<h2>Links</h2>
+<h3>Inline</h3>
+<p>You can create links to anything you want by using the following syntax: <code>[link text](url)</code>.</p>
+<pre><code class="hljs language-markdown">This is how to create links with the href embedded in the link itself: [<span class="hljs-string">Google</span>](<span class="hljs-link">https://www.google.com</span>).
+</code></pre>
+<p>This is how to create links with the href embedded in the link itself: <a href="https://www.google.com">Google</a>.</p>
+<h3>Reference</h3>
+<p>You can create reference links which are useful when you use the same link
+multiple times on the same page. They're also recommended because they make the
+Markdown source easier to read. References are case-insensitive.</p>
+<pre><code class="hljs language-markdown">This is a paragraph with reference-style links! Visit [<span class="hljs-string">Google</span>] and [<span class="hljs-string">Facebook</span>]! You can also have numbered references and they'd still work. [<span class="hljs-string">YouTube</span>][<span class="hljs-symbol">1</span>] is an example. References to files also work! [file].
+
+[<span class="hljs-symbol">google</span>]: <span class="hljs-link">https://www.google.com</span>
+[<span class="hljs-symbol">facebook</span>]: <span class="hljs-link">https://www.facebook.com</span>
+[<span class="hljs-symbol">1</span>]: <span class="hljs-link">https://www.youtube.com</span>
+[<span class="hljs-symbol">file</span>]: <span class="hljs-link">./latex.md</span>
+</code></pre>
+<p>This is a paragraph with reference-style links! Visit <a href="https://www.google.com">Google</a> and <a href="https://www.facebook.com">Facebook</a>! You can also have numbered references and they'd still work. <a href="https://www.youtube.com">YouTube</a> is an example. References to files also work! <a href="./latex.md">file</a>.</p>
+<h3>Angle Brackets</h3>
+<pre><code class="hljs language-markdown">URLs in angle brackets will automatically get turned into links. <span class="xml">&#x3C;http://www.example.com></span>.
+</code></pre>
+<p>URLs in angle brackets will automatically get turned into links. <a href="http://www.example.com">http://www.example.com</a>.</p>
+<h2>Tables</h2>
+<p>You can add tables in markdown to be rendered as accessible HTML tables. The
+following code produces the output below:</p>
+<pre><code class="hljs language-markdown">| Column A | Column B | Column C |
+| -------- | -------- | -------- |
+| A1       | B1       | C1       |
+| A2       | B2       | C2       |
+| A3       | B3       | C3       |
+</code></pre>
+<p>| Column A | Column B | Column C |
+| -------- | -------- | -------- |
+| A1       | B1       | C1       |
+| A2       | B2       | C2       |
+| A3       | B3       | C3       |</p></div></div></div></body></html>

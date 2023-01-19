@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Blog</title><meta content="Blog" property="og:title"/><meta content="website" property="og:type"/><meta content="A sample course about computer science!" name="description"/><meta content="A sample course about computer science!" property="og:description"/><meta content="https://example.com" property="og:URL"/><meta content="My amazing course" property="og:site_name"/><meta content="image/jpeg" property="og:image:type"/><meta content="summary_large_image" name="twitter:card"/><meta content="Blog" property="twitter:title"/><meta content="A sample course about computer science!" property="twitter:description"/><meta content="Sample Campus" property="twitter:creator"/><meta content="Sample Campus" property="twitter:site"/><meta name="next-head-count" content="15"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"/><link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/shades-of-purple.min.css"/><link rel="preload" href="/_next/static/css/af3a5591ab2bf196.css" as="style"/><link rel="stylesheet" href="/_next/static/css/af3a5591ab2bf196.css" data-n-g=""/><noscript data-n-css=""></noscript></head><body><div id="__next"><div class="container"><div class="header"><a href="/">/home</a><h1>Embedding YouTube Videos and Other Media</h1><p>Created: <!-- -->Thursday, 19 January 2023 at 9:10 pm</p><p>Updated: <!-- -->Thursday, 19 January 2023 at 9:10 pm</p><p>A sample file to show how to embed media in CaC.</p></div><hr/><div><h1>Embedding YouTube Videos and Other Media</h1>
+<p>You can embed YouTube videos and other media in CaC, here is some examples of how it works and how is can be used in CaC.</p>
+<h2>Embedding Images</h2>
+<h3>Inline style</h3>
+<p><code>![alt text](image path or link)</code></p>
+<p><img src="https://i.imgur.com/DLE8aXJ.jpg" alt="cute doggo"></p>
+<p><img src="https://i.imgur.com/lAG1D7l.gif" alt="cute doggo gif"></p>
+<h3>Reference style</h3>
+<p><code>![alt text][logo]</code></p>
+<p><code>[logo]: image path or link</code></p>
+<p><img src="https://media.tenor.com/JHFfBjUQcxEAAAAC/dance-morty.gif" alt="dance"></p>
+<h2>Clickable Images</h2>
+<p>while you can't embed YouTube videos (except using an iframe )directly, you can embed a clickable image that will open the video in a new tab:</p>
+<p><code>[![alt text](image path or link)](video link)</code></p>
+<p><a href="https://www.youtube.com/watch?v=CdEpmU9pRaE"><img src="https://i.imgur.com/UxsKLea.jpg" alt="Piano Cat"></a></p>
+<h2>Embedding YouTube Videos</h2>
+<h3>Using Youtube Frame</h3>
+<p>this is the as clickable images but using the first frame of the video instead of an image:</p>
+<p><code>[![Image_alt](https://img.youtube.com/vi/&#x3C;VIDEO_ID>/0.jpg)](https://www.youtube.com/watch/?v=VIDEO_ID)</code></p>
+<p><code>[![image_alt](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)</code></p>
+<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="image_alt"></a></p>
+<h3>Using iframe</h3>
+<h2>Embedding Audio</h2>
+<h3>Using links</h3>
+<p><code>[audio name](audio link)</code></p>
+<p><a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">audio</a></p>
+<h3>Using HTML</h3>
+<p><code>&#x3C;audio controls> &#x3C;source src="audio link" type="audio/mpeg"> &#x3C;/audio></code></p>
+<p>  </p></div></div></div></body></html>
