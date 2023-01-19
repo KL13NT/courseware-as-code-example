@@ -3,8 +3,6 @@ title: Embedding YouTube Videos and Other Media
 description: A sample file to show how to embed media in CaC.
 ---
 
-# Embedding YouTube Videos and Other Media
-
 You can embed YouTube videos and other media in CaC, here is some examples of how it works and how is can be used in CaC.
 
 ## Embedding Images

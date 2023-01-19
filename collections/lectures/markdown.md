@@ -3,8 +3,6 @@ title: Using Markdown
 description: A sample file to show how to use markdown in CaC.
 ---
 
-# Markdown
-
 Markdown is a lightweight markup language that you can use to add formatting
 elements to plaintext text documents. This article lays out some examples of how it works
 and how is can be used in CaC, you can also read more about it in [Markdown

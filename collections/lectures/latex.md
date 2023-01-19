@@ -3,8 +3,6 @@ title: Using LaTeX to Write Mathematical Equations
 description: A sample file to show how to use LaTeX in CaC.
 ---
 
-# LaTeX
-
 LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents. LaTeX is available as free software.
 
 ## LaTeX in CaC
