@@ -8,7 +8,7 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
       - name: Build using CaC Action 🏗️
-        uses: kl13nt/courseware-as-code-action@v0.0.11
+        uses: kl13nt/courseware-as-code-action@v0.0.12
         with:
           debug: true # prints npm and next logs in case of successful build
       - name: Deploy 🚀
