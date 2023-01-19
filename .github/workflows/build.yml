@@ -4,8 +4,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: build step
-        uses: kl13nt/courseware-as-code-action@v0.0.9
+      - name: Checkout source
+        uses: actions/checkout@v3
+      - name: Build using CaC Action 🏗️
+        uses: kl13nt/courseware-as-code-action@v0.0.10
         with:
           debug: true # prints npm and next logs in case of successful build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        permissions:
+          contents: write
+        with:
+          folder: courseware-as-code-template-master/out # The folder the action should deploy.
