@@ -1,8 +1,18 @@
 on: [push]
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
@@ -11,7 +21,10 @@ jobs:
         uses: kl13nt/courseware-as-code-action@v0.0.13
         with:
           debug: true # prints npm and next logs in case of successful build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload artifact 🚀
+        uses: actions/upload-pages-artifact@v1
         with:
-          folder: courseware-as-code-template-master/out # The folder the action should deploy.
+          path: ./courseware-as-code-template-master/out
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
