@@ -23,7 +23,7 @@ $$ \begin{equation} \text{Numbered Equation} \end{equation} $$
 $ \text{Inline Equation} $  
 $$ \text{Display Equation} $$
 
-$ \begin{equation} \text{Numbered Equation} \end{equation} $
+$$ \begin{equation} \text{Numbered Equation} \end{equation} $$
 
 ### Quotes
 
