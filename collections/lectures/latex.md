@@ -17,7 +17,7 @@ To enter math mode or to write mathematical equations you need to use the follow
 $ \text{Inline Equation} $
 $$ \text{Display Equation} $$
 
-$ \begin{equation} \text{Numbered Equation} \end{equation} $
+$$ \begin{equation} \text{Numbered Equation} \end{equation} $$
 ```
 
 $ \text{Inline Equation} $  
